@@ -186,7 +186,8 @@ namespace LabTSISA2 {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->tb1);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Text = L"Лабораторная работа №2: Организация очереди";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -195,5 +196,7 @@ namespace LabTSISA2 {
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void BtnCl(System::Object^ sender, System::EventArgs^ e);
+private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
